@@ -5,6 +5,8 @@ from numpy import expand_dims
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import Normalizer
 from sklearn.svm import SVC
+
+%matplotlib notebook
 from matplotlib import pyplot
 # load faces
 data = load('5-celebrity-faces-dataset.npz')

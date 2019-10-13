@@ -1,5 +1,7 @@
 # baseline model with dropout and data augmentation on the cifar10 dataset
 import sys
+
+%matplotlib notebook
 from matplotlib import pyplot
 from keras.datasets import cifar10
 from keras.utils import to_categorical

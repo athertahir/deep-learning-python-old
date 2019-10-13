@@ -1,4 +1,6 @@
 # face verification with the VGGFace2 model
+
+%matplotlib notebook
 from matplotlib import pyplot
 from PIL import Image
 from numpy import asarray

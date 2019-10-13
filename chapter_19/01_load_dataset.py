@@ -1,4 +1,6 @@
 # example of loading the fashion mnist dataset
+
+%matplotlib notebook
 from matplotlib import pyplot
 from keras.datasets import fashion_mnist
 # load dataset

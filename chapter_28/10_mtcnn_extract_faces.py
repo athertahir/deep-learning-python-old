@@ -1,4 +1,6 @@
 # extract and plot each detected face in a photograph
+
+%matplotlib notebook
 from matplotlib import pyplot
 from mtcnn.mtcnn import MTCNN
 

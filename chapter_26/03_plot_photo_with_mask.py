@@ -4,6 +4,8 @@ from xml.etree import ElementTree
 from numpy import zeros
 from numpy import asarray
 from mrcnn.utils import Dataset
+
+%matplotlib notebook
 from matplotlib import pyplot
 
 # class that defines and loads the kangaroo dataset

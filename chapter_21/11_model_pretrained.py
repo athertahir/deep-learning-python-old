@@ -1,5 +1,7 @@
 # vgg16 model used for transfer learning on the dogs and cats dataset
 import sys
+
+%matplotlib notebook
 from matplotlib import pyplot
 from keras.applications.vgg16 import VGG16
 from keras.models import Model

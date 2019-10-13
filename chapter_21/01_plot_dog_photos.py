@@ -1,4 +1,6 @@
 # plot dog photos from the dogs vs cats dataset
+
+%matplotlib notebook
 from matplotlib import pyplot
 from matplotlib.image import imread
 # define location of dataset

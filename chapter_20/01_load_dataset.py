@@ -1,4 +1,6 @@
 # example of loading the cifar10 dataset
+
+%matplotlib notebook
 from matplotlib import pyplot
 from keras.datasets import cifar10
 # load dataset

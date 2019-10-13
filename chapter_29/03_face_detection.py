@@ -1,4 +1,6 @@
 # example of face detection with mtcnn
+
+%matplotlib notebook
 from matplotlib import pyplot
 from PIL import Image
 from numpy import asarray

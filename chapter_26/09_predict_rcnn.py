@@ -4,6 +4,8 @@ from xml.etree import ElementTree
 from numpy import zeros
 from numpy import asarray
 from numpy import expand_dims
+
+%matplotlib notebook
 from matplotlib import pyplot
 from matplotlib.patches import Rectangle
 from mrcnn.config import Config

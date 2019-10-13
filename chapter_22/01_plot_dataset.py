@@ -1,4 +1,6 @@
 # plot the first 9 images in the planet dataset
+
+%matplotlib notebook
 from matplotlib import pyplot
 from matplotlib.image import imread
 # define location of dataset

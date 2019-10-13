@@ -1,6 +1,8 @@
 # model with double the filters for the fashion mnist dataset
 from numpy import mean
 from numpy import std
+
+%matplotlib notebook
 from matplotlib import pyplot
 from sklearn.model_selection import KFold
 from keras.datasets import fashion_mnist

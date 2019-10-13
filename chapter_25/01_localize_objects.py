@@ -3,6 +3,8 @@ from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 from mrcnn.config import Config
 from mrcnn.model import MaskRCNN
+
+%matplotlib notebook
 from matplotlib import pyplot
 from matplotlib.patches import Rectangle
 

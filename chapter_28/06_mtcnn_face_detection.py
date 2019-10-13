@@ -1,4 +1,6 @@
 # face detection with mtcnn on a photograph
+
+%matplotlib notebook
 from matplotlib import pyplot
 from mtcnn.mtcnn import MTCNN
 # load image from file

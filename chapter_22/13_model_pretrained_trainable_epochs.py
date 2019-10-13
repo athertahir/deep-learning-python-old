@@ -1,6 +1,8 @@
 # vgg with fine-tuning and data augmentation for the planet dataset
 import sys
 from numpy import load
+
+%matplotlib notebook
 from matplotlib import pyplot
 from sklearn.model_selection import train_test_split
 from keras import backend

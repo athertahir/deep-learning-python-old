@@ -5,6 +5,8 @@ from numpy import expand_dims
 from keras.models import load_model
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
+
+%matplotlib notebook
 from matplotlib import pyplot
 from matplotlib.patches import Rectangle
 

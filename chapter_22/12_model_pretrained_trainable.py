@@ -1,6 +1,8 @@
 # vgg16 transfer learning on the planet dataset with some trainable layers
 import sys
 from numpy import load
+
+%matplotlib notebook
 from matplotlib import pyplot
 from sklearn.model_selection import train_test_split
 from keras import backend

@@ -1,5 +1,7 @@
 # 2-vgg block baseline model for the dogs vs cats dataset
 import sys
+
+%matplotlib notebook
 from matplotlib import pyplot
 from keras.models import Sequential
 from keras.layers import Conv2D

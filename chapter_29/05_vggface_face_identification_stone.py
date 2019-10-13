@@ -1,5 +1,7 @@
 # Example of face detection with a vggface2 model (Sharon Stone)
 from numpy import expand_dims
+
+%matplotlib notebook
 from matplotlib import pyplot
 from PIL import Image
 from numpy import asarray

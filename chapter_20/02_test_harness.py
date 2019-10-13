@@ -1,6 +1,8 @@
 # test harness for evaluating models on the cifar10 dataset
 # NOTE: no model is defined, this example will not run
 import sys
+
+%matplotlib notebook
 from matplotlib import pyplot
 from keras.datasets import cifar10
 from keras.utils import to_categorical

@@ -2,6 +2,8 @@
 from os import listdir
 from PIL import Image
 from numpy import asarray
+
+%matplotlib notebook
 from matplotlib import pyplot
 from mtcnn.mtcnn import MTCNN
 

@@ -1,5 +1,7 @@
 # baseline with 3 vgg blocks for the cifar10 dataset
 import sys
+
+%matplotlib notebook
 from matplotlib import pyplot
 from keras.datasets import cifar10
 from keras.utils import to_categorical

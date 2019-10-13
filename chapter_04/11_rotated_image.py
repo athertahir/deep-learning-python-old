@@ -1,5 +1,7 @@
 # create rotated versions of an image
 from PIL import Image
+
+%matplotlib notebook
 from matplotlib import pyplot
 # load image
 image = Image.open('opera_house.jpg')

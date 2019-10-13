@@ -1,5 +1,7 @@
 # load and display an image with Matplotlib
 from matplotlib import image
+
+%matplotlib notebook
 from matplotlib import pyplot
 # load image as pixel array
 data = image.imread('opera_house.jpg')
