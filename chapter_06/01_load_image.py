@@ -9,3 +9,6 @@ print(img.mode)
 print(img.size)
 # show the image
 img.show()
+
+from IPython.display import display # to display images
+display(img)

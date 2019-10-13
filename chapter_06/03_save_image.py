@@ -15,3 +15,6 @@ print(img.format)
 print(img.mode)
 print(img.size)
 img.show()
+
+from IPython.display import display # to display images
+display(img)
