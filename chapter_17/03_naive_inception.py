@@ -29,4 +29,4 @@ model = Model(inputs=visible, outputs=layer)
 # summarize model
 model.summary()
 # plot model architecture
-plot_model(model, show_shapes=True, to_file='naive_inception_module.png')
+plot_model(model, show_shapes=True, to_file='/tmp/naive_inception_module.png')

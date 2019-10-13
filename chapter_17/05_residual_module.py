@@ -31,4 +31,4 @@ model = Model(inputs=visible, outputs=layer)
 # summarize model
 model.summary()
 # plot model architecture
-plot_model(model, show_shapes=True, to_file='residual_module.png')
+plot_model(model, show_shapes=True, to_file='/tmp/residual_module.png')

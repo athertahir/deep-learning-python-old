@@ -38,7 +38,7 @@ def run_test_harness():
 	# fit model
 	model.fit_generator(train_it, steps_per_epoch=len(train_it), epochs=10, verbose=0)
 	# save model
-	model.save('final_model.h5')
+	model.save('/tmp/final_model.h5')
 
 # entry point, run the test harness
 run_test_harness()

@@ -78,7 +78,7 @@ def run_test_harness():
 	steps = int(trainX.shape[0] / 64)
 	model.fit_generator(it_train, steps_per_epoch=steps, epochs=400, validation_data=(testX, testY), verbose=0)
 	# save model
-	model.save('final_model.h5')
+	model.save('/tmp/final_model.h5')
 
 # entry point, run the test harness
 run_test_harness()

@@ -23,4 +23,4 @@ model = Model(inputs=visible, outputs=layer)
 # summarize model
 model.summary()
 # plot model architecture
-plot_model(model, show_shapes=True, to_file='vgg_block.png')
+plot_model(model, show_shapes=True, to_file='/tmp/vgg_block.png')

@@ -12,4 +12,4 @@ model = Model(inputs=visible, outputs=output)
 # summarize layers
 model.summary()
 # plot graph
-plot_model(model, to_file='multilayer_perceptron_graph.png')
+plot_model(model, to_file='/tmp/multilayer_perceptron_graph.png')

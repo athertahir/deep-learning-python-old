@@ -12,4 +12,4 @@ model = Model(inputs=visible, outputs=output)
 # summarize layers
 model.summary()
 # plot graph
-plot_model(model, to_file='recurrent_neural_network.png')
+plot_model(model, to_file='/tmp/recurrent_neural_network.png')
