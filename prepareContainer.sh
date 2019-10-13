@@ -9,5 +9,7 @@ pip install Pillow
 pip install opencv-python
 pip install mtcnn
 pip install git+https://github.com/rcmalli/keras-vggface.git
-pip install --upgrade tensorflow
-pip install Theano
+
+
+conda install theano
+conda install -c conda-forge tensorflow
