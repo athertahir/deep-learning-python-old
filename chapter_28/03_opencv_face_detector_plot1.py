@@ -1,3 +1,18 @@
+# %%
+'''
+We can update the face detector example to plot the photograph and draw each bounding box. This can
+be achieved by drawing a rectangle for each box directly over the pixels of the loaded image
+using the rectangle() function that takes two points.
+'''
+
+
+# %%
+'''
+Running the example, we can see that the photograph was plotted correctly and that each
+face was correctly detected.
+'''
+
+# %%
 # plot photo with detected faces using opencv cascade classifier
 from cv2 import imread
 from cv2 import imshow
@@ -21,6 +36,6 @@ for box in bboxes:
 # show the image
 imshow('face detection', pixels)
 # keep the window open until we press a key
-waitKey(0)
-# close the window
-destroyAllWindows()
+# waitKey(0)
+# # close the window
+# destroyAllWindows()

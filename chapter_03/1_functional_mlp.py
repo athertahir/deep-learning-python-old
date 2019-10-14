@@ -1,6 +1,6 @@
 # %%
 '''
-## 
+## Multilayer Perceptron
 In this section, we define a Multilayer Perceptron model for binary classification. The model
 has 10 inputs, 3 hidden layers with 10, 20, and 10 neurons, and an output layer with 1 output.
 Rectified linear activation functions are used in each hidden layer and a sigmoid activation
@@ -28,5 +28,3 @@ Running the example prints the structure of the network.
 # %%
 # summarize layers
 model.summary()
-# plot graph
-plot_model(model, to_file='/tmp/multilayer_perceptron_graph.png')

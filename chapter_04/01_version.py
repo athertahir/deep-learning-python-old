@@ -8,25 +8,19 @@ and no longer updated and does not support Python 3. Pillow is a PIL library tha
 Python 3 and is the preferred modern library for image manipulation in Python. It is even
 required for simple image loading and saving in other Python scientific libraries such as SciPy
 and Matplotlib.
+
 The Pillow library is installed as a part of most SciPy installations; for example, if you are
 using Anaconda. If you manage the installation of Python software packages yourself for your
 workstation, you can easily install Pillow using pip; for example:
+
 sudo pip install Pillow
-Listing 4.1: Example of installing Pillow with Pip.
-For more help installing Pillow manually, see:
-- Pillow Installation Instructions.1
+
 Pillow is built on top of the older PIL and you can confirm that the library was installed
 correctly by printing the version number; for example:
 '''
 
-# %%
-''' 
-Running the example will print the version numbers for PIL and Pillow; your version numbers
-should be the same or higher.
-'''
 
 # %%
 # check PIL and Pillow version numbers
 import PIL
 print('Pillow Version:', PIL.__version__)
-print('PIL Version:', PIL.VERSION)
