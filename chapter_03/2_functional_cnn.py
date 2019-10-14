@@ -1,3 +1,13 @@
+# %%
+'''
+## Convolutional Neural Network
+In this section, we will define a convolutional neural network for image classification. The model
+receives black and white 64 × 64 images as input, then has a sequence of two convolutional and
+pooling layers as feature extractors, followed by a fully connected layer to interpret the features
+and an output layer with a sigmoid activation for two-class predictions. 
+'''
+
+# %%
 # example of a convolutional neural network
 from keras.utils import plot_model
 from keras.models import Model
@@ -15,6 +25,14 @@ flat1 = Flatten()(pool2)
 hidden1 = Dense(10, activation='relu')(flat1)
 output = Dense(1, activation='sigmoid')(hidden1)
 model = Model(inputs=visible, outputs=output)
+
+
+# %%
+''' 
+Running the example prints the structure of the network. A plot of the model graph is also created and saved to file.
+'''
+
+# %%
 # summarize layers
 model.summary()
 # plot graph

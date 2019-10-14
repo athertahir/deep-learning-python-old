@@ -1,3 +1,13 @@
+# %%
+''' 
+## How to Convert Images to NumPy Array
+Both approaches are effective for loading image data into NumPy arrays, although the
+Matplotlib imread() function uses fewer lines of code than loading and converting a Pillow
+Image object and may be preferred. For example, you could easily load all images in a directory
+as a list as follows:
+'''
+
+# %%
 # load all images in a directory
 from os import listdir
 from matplotlib import image

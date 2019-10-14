@@ -1,3 +1,17 @@
+# %%
+'''
+## Local Standardization
+The example below calculates the mean and standard deviation of the loaded image per-channel,
+then uses these statistics to standardize the pixels separately in each channel.
+'''
+# %%
+'''
+Running the example first calculates and reports the means and standard deviation of
+the pixel values in each channel. The pixel values are then standardized and statistics are
+re-calculated, confirming the new zero-mean and unit standard deviation.
+'''
+
+# %%
 # example of per-channel pixel standardization
 from numpy import asarray
 from PIL import Image

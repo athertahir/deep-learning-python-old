@@ -1,3 +1,9 @@
+# %%
+'''
+Running the following example to manually calculate a two-dimensional filter
+'''
+
+# %%
 # example of manually applying a 2d filter.
 from numpy import asarray
 from numpy import tensordot

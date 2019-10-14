@@ -1,3 +1,23 @@
+# %%
+'''
+## Random Brightness Augmentation
+The brightness of the image can be augmented by either randomly darkening images, brightening
+images, or both. The intent is to allow a model to generalize across images trained on different
+lighting levels. This can be achieved by specifying the brightness range argument to the
+ImageDataGenerator() constructor that specifies min and max range as a float representing a
+percentage for selecting a darkening or brightening amount. Values less than 1.0 darken the
+image, e.g. [0.5, 1.0], whereas values larger than 1.0 brighten the image, e.g. [1.0, 1.5], where 1.0
+has no effect on brightness. The example below demonstrates a brightness image augmentation,
+allowing the generator to randomly darken the image between 1.0 (no change) and 0.2 or 20%.
+'''
+
+# %%
+'''
+Running the example shows the augmented images with varying amounts of darkening
+applied.
+'''
+
+# %%
 # example of brighting image augmentation
 from numpy import expand_dims
 from keras.preprocessing.image import load_img

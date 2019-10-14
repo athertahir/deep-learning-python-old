@@ -1,3 +1,22 @@
+# %%
+'''
+## Horizontal and Vertical Flip Augmentation
+An image flip means reversing the rows or columns of pixels in the case of a vertical or
+horizontal flip respectively. The flip augmentation is specified by a boolean horizontal flip
+or vertical flip argument to the ImageDataGenerator class constructor. For photographs
+like the bird photograph used in this tutorial, horizontal flips may make sense, but vertical flips
+would not. For other types of images, such as aerial photographs, cosmology photographs, and
+microscopic photographs, perhaps vertical flips make sense. The example below demonstrates
+augmenting the chosen photograph with horizontal flips via the horizontal flip argument.
+'''
+
+# %%
+'''
+Running the example creates a plot of nine augmented images. We can see that the horizontal
+flip is applied randomly to some images and not others
+'''
+
+# %%
 # example of horizontal flip image augmentation
 from numpy import expand_dims
 from keras.preprocessing.image import load_img

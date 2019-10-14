@@ -1,3 +1,22 @@
+# %%
+'''
+## How to Save an Image With Keras
+The Keras API also provides the save img() function to save an image to file. The function
+takes the path to save the image, and the image data in NumPy array format. The file format
+is inferred from the filename, but can also be specified via the file format argument. This can
+be useful if you have manipulated image pixel data, such as scaling, and wish to save the image
+for later use. The example below loads the photograph image in grayscale format, converts it to
+a NumPy array, and saves it to a new file name.
+'''
+# %%
+'''
+Running the example first loads the image and forces the color channels to be grayscale. The
+image is then converted to a NumPy array and saved to the new filename bondi beach grayscale.jpg
+in the current working directory. To confirm that the file was saved correctly, it is loaded again
+as a PIL image and details of the image are reported.
+'''
+
+# %%
 # example of saving an image with the Keras API
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import save_img

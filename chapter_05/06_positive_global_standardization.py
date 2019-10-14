@@ -1,3 +1,20 @@
+# %%
+'''
+## Positive Global Standardization
+There may be a desire to maintain the pixel values in the positive domain, perhaps so the images
+can be visualized or perhaps for the benefit of a chosen activation function in the model. A
+popular way of achieving this is to clip the standardized pixel values to the range [-1, 1] and then
+rescale the values from [-1,1] to [0,1]. The example below updates the global standardization
+example to demonstrate this additional rescaling.
+'''
+# %%
+'''
+Running the example first calculates the global mean and standard deviation pixel values,
+standardizes the pixel values, then confirms the transform by reporting the new global mean
+and standard deviation of 0.0 and 1.0 respectively.
+'''
+
+# %%
 # example of global pixel standardization shifted to positive domain
 from numpy import asarray
 from numpy import clip

@@ -1,3 +1,20 @@
+# %%
+'''
+## Random Rotation Augmentation
+A rotation augmentation randomly rotates the image clockwise by a given number of degrees
+from 0 to 360. The rotation will likely rotate pixels out of the image frame and leave areas of
+the frame with no pixel data that must be filled in. The example below demonstrates random
+rotations via the rotation range argument, with rotations to the image between 0 and 90
+degrees
+'''
+
+# %%
+'''
+Running the example generates examples of the rotated image, showing in some cases pixels
+rotated out of the frame and the nearest-neighbor fill
+'''
+
+# %%
 # example of random rotation image augmentation
 from numpy import expand_dims
 from keras.preprocessing.image import load_img
