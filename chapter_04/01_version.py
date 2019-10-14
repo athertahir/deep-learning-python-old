@@ -14,7 +14,7 @@ workstation, you can easily install Pillow using pip; for example:
 sudo pip install Pillow
 Listing 4.1: Example of installing Pillow with Pip.
 For more help installing Pillow manually, see:
-❼ Pillow Installation Instructions.1
+- Pillow Installation Instructions.1
 Pillow is built on top of the older PIL and you can confirm that the library was installed
 correctly by printing the version number; for example:
 '''

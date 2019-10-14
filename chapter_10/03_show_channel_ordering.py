@@ -6,9 +6,9 @@ first or last format, but the preference must be specified and adhered to when u
 Keras wraps a number of mathematical libraries, and each has a preferred channel ordering.
 The three main libraries that Keras may wrap and their preferred channel ordering are listed
 below:
-❼ TensorFlow: Channels last order.
-❼ Theano: Channels first order.
-❼ CNTK: Channels last order.
+- TensorFlow: Channels last order.
+- Theano: Channels first order.
+- CNTK: Channels last order.
 
 By default, Keras is configured to use TensorFlow and the channel ordering is also by default
 channels last. You can use either channel ordering with any library and the Keras library. Some
