@@ -7,6 +7,7 @@ popular way of achieving this is to clip the standardized pixel values to the ra
 rescale the values from [-1,1] to [0,1]. The example below updates the global standardization
 example to demonstrate this additional rescaling.
 '''
+
 # %%
 '''
 Running the example first calculates the global mean and standard deviation pixel values,

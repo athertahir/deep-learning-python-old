@@ -8,6 +8,7 @@ can be useful if the pixel data is modified in array format because it can be sa
 The example below loads the test image, converts it to a NumPy array, and then converts it
 back into a PIL image.
 '''
+
 # %%
 '''
 Running the example first loads the photograph in PIL format, then converts the image

@@ -4,6 +4,7 @@
 The example below calculates the mean and standard deviation of the loaded image per-channel,
 then uses these statistics to standardize the pixels separately in each channel.
 '''
+
 # %%
 '''
 Running the example first calculates and reports the means and standard deviation of

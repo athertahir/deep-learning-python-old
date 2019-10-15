@@ -8,6 +8,7 @@ be useful if you have manipulated image pixel data, such as scaling, and wish to
 for later use. The example below loads the photograph image in grayscale format, converts it to
 a NumPy array, and saves it to a new file name.
 '''
+
 # %%
 '''
 Running the example first loads the image and forces the color channels to be grayscale. The
@@ -33,7 +34,7 @@ print(type(img))
 print(img.format)
 print(img.mode)
 print(img.size)
-img.show()
+#img.show()
 
 from IPython.display import display # to display images
 display(img)

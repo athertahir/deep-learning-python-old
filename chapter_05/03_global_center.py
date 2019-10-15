@@ -36,6 +36,7 @@ the trained models in the future. For models trained on images centered using th
 that may be used for transfer learning on new tasks, it can be beneficial or even required to
 normalize images for the new task using the same means. Let’s look at a few examples.
 '''
+
 # %%
 '''
 ## Global Centering
