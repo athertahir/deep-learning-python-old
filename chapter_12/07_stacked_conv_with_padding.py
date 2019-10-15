@@ -20,5 +20,5 @@ model.summary()
 # %%
 '''
 Running the example, we can see that with the addition of padding, the shape of the output
-feature maps remains fixed at 8 × 8 even three layers deep.
+feature maps remains fixed at 8 X 8 even three layers deep.
 '''

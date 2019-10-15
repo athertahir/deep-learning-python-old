@@ -13,19 +13,19 @@ map.
 For example, the stride can be changed to (2,2). This has the effect of moving the filter
 two pixels left for each horizontal movement of the filter and two pixels down for each vertical
 movement of the filter when creating the feature map. We can demonstrate this with an example
-using the 8 × 8 image with a vertical line (left) dot product (. operator) with the vertical line
+using the 8 X 8 image with a vertical line (left) dot product (. operator) with the vertical line
 filter (right) with a stride of two pixels.
 '''
 
 # %%
 '''
-We can see that there are only three valid applications of the 3 × 3 filters to the 8 × 8 input
+We can see that there are only three valid applications of the 3 X 3 filters to the 8 X 8 input
 image with a stride of two. This will be the same in the vertical dimension. This has the effect
-of applying the filter in such a way that the normal feature map output (6 × 6) is down-sampled
-so that the size of each dimension is reduced by half (3 × 3), resulting in 1 4 the number of
+of applying the filter in such a way that the normal feature map output (6 X 6) is down-sampled
+so that the size of each dimension is reduced by half (3 X 3), resulting in 1 4 the number of
 pixels (36 pixels down to 9). The stride can be specified in Keras on the Conv2D layer via the
 stride argument and specified as a tuple with height and width. The example demonstrates
-the application of our manual vertical line filter on the 8 × 8 input image with a convolutional
+the application of our manual vertical line filter on the 8 X 8 input image with a convolutional
 layer that has a stride of two.
 '''
 
@@ -67,7 +67,7 @@ for r in range(yhat.shape[1]):
 # %%
 '''
 Running the example, we can see from the summary of the model that the shape of the
-output feature map will be 3 × 3. Applying the handcrafted filter to the input image and
+output feature map will be 3 X 3. Applying the handcrafted filter to the input image and
 printing the resulting activation feature map, we can see that, indeed, the filter still detected
 the vertical line, and can represent this finding with less information. Downsampling may be
 desirable in some cases where deeper knowledge of the filters used in the model or of the model

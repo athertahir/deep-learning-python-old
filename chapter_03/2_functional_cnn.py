@@ -2,7 +2,7 @@
 '''
 ## Convolutional Neural Network
 In this section, we will define a convolutional neural network for image classification. The model
-receives black and white 64 × 64 images as input, then has a sequence of two convolutional and
+receives black and white 64 X 64 images as input, then has a sequence of two convolutional and
 pooling layers as feature extractors, followed by a fully connected layer to interpret the features
 and an output layer with a sigmoid activation for two-class predictions. 
 '''

@@ -12,7 +12,7 @@ library and provides a ton of properties about the image as well as functions th
 manipulate the pixels and format of the image.
 The format property on the image will report the image format (e.g. JPEG), the mode will
 report the pixel channel format (e.g. RGB or CMYK), and the size will report the dimensions
-of the image in pixels (e.g. 640 × 480). The show() function will display the image using your
+of the image in pixels (e.g. 640 X 480). The show() function will display the image using your
 operating systems default application. The example below demonstrates how to load and show
 an image using the Image class in the Pillow library
 '''

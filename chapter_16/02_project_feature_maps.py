@@ -1,7 +1,7 @@
 # %%
 '''
 ## Example of Projecting Feature Maps
-A 1 × 1 filter can be used to create a projection of the feature maps. The number of feature
+A 1 X 1 filter can be used to create a projection of the feature maps. The number of feature
 maps created will be the same number and the effect may be a refinement of the features already
 extracted. This is often called channel-wise pooling, as opposed to traditional feature-wise
 pooling on each channel. It can be implemented as follows:

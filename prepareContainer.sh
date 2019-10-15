@@ -16,12 +16,12 @@ pip install graphviz
 
 pip install git+https://github.com/rcmalli/keras-vggface.git
 
-sudo yes | add-apt-repository ppa:gviz-adm/graphviz-dev
-sudo apt-get update
-sudo yes | apt-get install graphviz-dev
+# sudo yes | add-apt-repository ppa:gviz-adm/graphviz-dev
+# sudo apt-get update
+# sudo yes | apt-get install graphviz-dev
 
 # conda install theano
 # conda install -c conda-forge tensorflow
 # conda install graphviz
 # conda install pydotplus -y
-# conda install graphviz -y
+conda install graphviz -y

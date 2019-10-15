@@ -11,9 +11,9 @@ filter outside the frame of the image, it gives the pixels on the border of the 
 opportunity for interacting with the filter, more of an opportunity for features to be detected by
 the filter, and in turn, an output feature map that has the same shape as the input image.
 
-For example, in the case of applying a 3 × 3 filter to the 8 × 8 input image, we can add a
+For example, in the case of applying a 3 X 3 filter to the 8 X 8 input image, we can add a
 border of one pixel around the outside of the image. This has the effect of artificially creating
-a 10 × 10 input image. When the 3 × 3 filter is applied, it results in an 8 × 8 feature map.
+a 10 X 10 input image. When the 3 X 3 filter is applied, it results in an 8 X 8 feature map.
 The added pixel values could have the value zero value that has no effect with the dot product
 operation when the filter is applied.
 '''

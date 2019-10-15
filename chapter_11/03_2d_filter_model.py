@@ -2,17 +2,24 @@
 '''
 ## Example of 2D Convolutional Layer
 We can expand the bump detection example in the previous section to a vertical line detector in
-a two-dimensional image. Again, we can constrain the input, in this case to a square 8 × 8 pixel
+a two-dimensional image. Again, we can constrain the input, in this case to a square 8 X 8 pixel
 input image with a single channel (e.g. grayscale) with a single vertical line in the middle.
 
 
 [0, 0, 0, 1, 1, 0, 0, 0]
+
 [0, 0, 0, 1, 1, 0, 0, 0]
+
 [0, 0, 0, 1, 1, 0, 0, 0]
+
 [0, 0, 0, 1, 1, 0, 0, 0]
+
 [0, 0, 0, 1, 1, 0, 0, 0]
+
 [0, 0, 0, 1, 1, 0, 0, 0]
+
 [0, 0, 0, 1, 1, 0, 0, 0]
+
 [0, 0, 0, 1, 1, 0, 0, 0]
 
 
@@ -27,7 +34,7 @@ this case.
 # %%
 '''
 We will define the Conv2D layer with a single filter as we did in the previous section with
-the Conv1D example. The filter will be two-dimensional and square with the shape 3 × 3. The
+the Conv1D example. The filter will be two-dimensional and square with the shape 3 X 3. The
 layer will expect input samples to have the shape [columns, rows, channels] or [8,8,1].
 '''
 
@@ -55,7 +62,9 @@ We will define a vertical line detector filter to detect the single vertical lin
 data. The filter looks as follows:
 
 0, 1, 0
+
 0, 1, 0
+
 0, 1, 0
 
 Finally, we will apply the filter to the input image, which will result in a feature map that

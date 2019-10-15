@@ -1,14 +1,14 @@
 # %%
 '''
 ## Example of Increasing Feature Maps
-The 1× 1 filter can be used to increase the number of feature maps. This is a common operation
+The 1X 1 filter can be used to increase the number of feature maps. This is a common operation
 used after a pooling layer prior to applying another convolutional layer. The projection effect of
 the filter can be applied as many times as needed to the input, allowing the number of feature
 maps to be scaled up and yet have a composition that captures the salient features of the
 original. We can increase the number of feature maps from 512 input from the first hidden layer
 to double the size at 1,024 feature maps.
 
-model.add(Conv2D(1024, (1,1), activation=✬relu✬))
+model.add(Conv2D(1024, (1,1), activation='relu'))
 
 The complete example is listed below
 '''

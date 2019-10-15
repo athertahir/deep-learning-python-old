@@ -1,11 +1,11 @@
 # %%
 '''
 ## Average Pooling Layer
-On two-dimensional feature maps, pooling is typically applied in 2 × 2 patches of the feature
+On two-dimensional feature maps, pooling is typically applied in 2 X 2 patches of the feature
 map with a stride of (2,2). Average pooling involves calculating the average for each patch of
-the feature map. This means that each 2 × 2 square of the feature map is downsampled to the
+the feature map. This means that each 2 X 2 square of the feature map is downsampled to the
 average value in the square. For example, the output of the line detector convolutional filter13.4. Average Pooling Layer 138
-in the previous section was a 6 × 6 feature map. We can look at applying the average pooling
+in the previous section was a 6 X 6 feature map. We can look at applying the average pooling
 operation to the first line of patches of that feature map manually. The first line of pooling
 input (first two rows and six columns) of the output feature map were as follows:
 

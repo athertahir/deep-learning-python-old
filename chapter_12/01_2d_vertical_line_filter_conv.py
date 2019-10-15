@@ -25,7 +25,7 @@ with all 0 values and a two-pixel wide vertical line in the center.
 # %%
 '''
 The filter is initialized with random weights as part of the initialization of the model. We
-will overwrite the random weights and hard code our own 3 × 3 filter that will detect vertical
+will overwrite the random weights and hard code our own 3 X 3 filter that will detect vertical
 lines. That is, the filter will strongly activate when it detects a vertical line and weakly activate
 when it does not. We expect that by applying this filter across the input image, the output
 feature map will show that the vertical line was detected
@@ -68,7 +68,7 @@ model.summary()
 # %%
 '''
 The filter is initialized with random weights as part of the initialization of the model. We
-will overwrite the random weights and hard code our own 3 × 3 filter that will detect vertical
+will overwrite the random weights and hard code our own 3 X 3 filter that will detect vertical
 lines. That is, the filter will strongly activate when it detects a vertical line and weakly activate
 when it does not. We expect that by applying this filter across the input image, the output
 feature map will show that the vertical line was detected
@@ -101,10 +101,10 @@ single feature map to confirm that the line was detected.
 # %%
 '''
 Running the example first summarizes the structure of the model. Of note is that the single
-hidden convolutional layer will take the 8 × 8 pixel input image and will produce a feature map
-with the dimensions of 6 × 6. We will go into why this is the case in the next section. We can
-also see that the layer has 10 parameters, that is nine weights for the filter (3 × 3) and one
+hidden convolutional layer will take the 8 X 8 pixel input image and will produce a feature map
+with the dimensions of 6 X 6. We will go into why this is the case in the next section. We can
+also see that the layer has 10 parameters, that is nine weights for the filter (3 X 3) and one
 weight for the bias. Finally, the feature map is printed. We can see from reviewing the numbers
-in the 6 × 6 matrix that indeed the manually specified filter detected the vertical line in the
+in the 6 X 6 matrix that indeed the manually specified filter detected the vertical line in the
 middle of our input image.
 '''
