@@ -1,3 +1,32 @@
+# %%
+'''
+## How to Implement the Residual Module
+The Residual Network, or ResNet, architecture for convolutional neural networks was proposed
+by Kaiming He, et al. in their 2016 paper titled Deep Residual Learning for Image Recognition,
+which achieved success on the 2015 version of the ILSVRC challenge (introduced in Chapter 15).
+A key innovation in the ResNet was the residual module. The residual module, specifically the
+identity residual model, is a block of two convolutional layers with the same number of filters
+and a small filter size where the output of the second layer is added with the input to the first
+convolutional layer. Drawn as a graph, the input to the module is added to the output of the
+module and is called a shortcut connection. We can implement this directly in Keras using the
+functional API and the add() merge function.
+'''
+
+# %%
+'''
+A limitation with this direct implementation is that if the number of filters in the input
+layer does not match the number of filters in the last convolutional layer of the module (defined
+by n filters), then we will get an error. One solution is to use a 1 × 1 convolution layer,
+often referred to as a projection layer, to either increase the number of filters for the input
+layer or reduce the number of filters for the last convolutional layer in the module. The former
+solution makes more sense, and is the approach proposed in the paper, referred to as a projection
+shortcut.
+
+Running the example first creates the model then prints a summary of the layers. Because
+the module is linear, this summary is helpful to see what is going on.
+'''
+
+# %%
 # example of a CNN model with an identity or projection residual module
 from keras.models import Model
 from keras.layers import Input

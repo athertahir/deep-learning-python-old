@@ -1,3 +1,32 @@
+# %%
+'''
+## How to Implement the Inception Module
+The inception module was described and used in the GoogLeNet model in the 2015 paper by
+Christian Szegedy, et al. titled Going Deeper with Convolutions (introduced in Chapter 15).
+Like the VGG model, the GoogLeNet model achieved top results in the 2014 version of the
+ILSVRC challenge. The key innovation on the inception model is called the inception module.
+This is a block of parallel convolutional layers with different sized filters (e.g. 1 × 1, 3 × 3, 5 × 5)
+and a 3 × 3 max pooling layer, the results of which are then concatenated.
+
+This is a very simple and powerful architectural unit that allows the model to learn not only
+parallel filters of the same size, but parallel filters of differing sizes, allowing learning at multiple
+scales. We can implement an inception module directly using the Keras functional API. The
+function below will create a single inception module with a specified number of filters for each
+of the parallel convolutional layers. From the GoogLeNet architecture described in the paper, it
+does not appear to use a systematic number of filters for parallel convolutional layers as the
+model is highly optimized. As such, we can parameterize the module definition so that we can
+specify the number of filters to use in each of the 1 × 1, 3 × 3, and 5 × 5 filters.
+'''
+
+# %%
+'''
+To use the naive_inception_module function, provide the reference to the prior layer as input, the number of filters,
+and it will return a reference to the concatenated filters layer that you can then connect to more
+inception modules or a submodel for making a prediction. We can demonstrate how to use this
+function by creating a model with a single inception module.
+'''
+
+# %%
 # example of creating a CNN with an inception module
 from keras.models import Model
 from keras.layers import Input
@@ -30,3 +59,9 @@ model = Model(inputs=visible, outputs=layer)
 model.summary()
 # plot model architecture
 plot_model(model, show_shapes=True, to_file='/tmp/naive_inception_module.png')
+
+# %%
+'''
+Running the example creates the model and summarizes the layers. We know the convolutional and pooling layers are parallel, but this summary does not capture the structure
+easily.
+'''
