@@ -16,7 +16,7 @@ functional API and the add() merge function.
 '''
 A limitation with this direct implementation is that if the number of filters in the input
 layer does not match the number of filters in the last convolutional layer of the module (defined
-by n filters), then we will get an error. One solution is to use a 1 × 1 convolution layer,
+by n filters), then we will get an error. One solution is to use a 1 x 1 convolution layer,
 often referred to as a projection layer, to either increase the number of filters for the input
 layer or reduce the number of filters for the last convolutional layer in the module. The former
 solution makes more sense, and is the approach proposed in the paper, referred to as a projection

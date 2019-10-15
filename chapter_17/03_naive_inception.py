@@ -5,8 +5,8 @@ The inception module was described and used in the GoogLeNet model in the 2015 p
 Christian Szegedy, et al. titled Going Deeper with Convolutions (introduced in Chapter 15).
 Like the VGG model, the GoogLeNet model achieved top results in the 2014 version of the
 ILSVRC challenge. The key innovation on the inception model is called the inception module.
-This is a block of parallel convolutional layers with different sized filters (e.g. 1 × 1, 3 × 3, 5 × 5)
-and a 3 × 3 max pooling layer, the results of which are then concatenated.
+This is a block of parallel convolutional layers with different sized filters (e.g. 1 x 1, 3 x 3, 5 x 5)
+and a 3 x 3 max pooling layer, the results of which are then concatenated.
 
 This is a very simple and powerful architectural unit that allows the model to learn not only
 parallel filters of the same size, but parallel filters of differing sizes, allowing learning at multiple
@@ -15,7 +15,7 @@ function below will create a single inception module with a specified number of 
 of the parallel convolutional layers. From the GoogLeNet architecture described in the paper, it
 does not appear to use a systematic number of filters for parallel convolutional layers as the
 model is highly optimized. As such, we can parameterize the module definition so that we can
-specify the number of filters to use in each of the 1 × 1, 3 × 3, and 5 × 5 filters.
+specify the number of filters to use in each of the 1 x 1, 3 x 3, and 5 x 5 filters.
 '''
 
 # %%

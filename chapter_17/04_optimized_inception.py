@@ -5,8 +5,8 @@ The inception module was described and used in the GoogLeNet model in the 2015 p
 Christian Szegedy, et al. titled Going Deeper with Convolutions (introduced in Chapter 15).
 Like the VGG model, the GoogLeNet model achieved top results in the 2014 version of the
 ILSVRC challenge. The key innovation on the inception model is called the inception module.
-This is a block of parallel convolutional layers with different sized filters (e.g. 1 × 1, 3 × 3, 5 × 5)
-and a 3 × 3 max pooling layer, the results of which are then concatenated.
+This is a block of parallel convolutional layers with different sized filters (e.g. 1 x 1, 3 x 3, 5 x 5)
+and a 3 x 3 max pooling layer, the results of which are then concatenated.
 
 This is a very simple and powerful architectural unit that allows the model to learn not only
 parallel filters of the same size, but parallel filters of differing sizes, allowing learning at multiple
@@ -15,14 +15,14 @@ function below will create a single inception module with a specified number of 
 of the parallel convolutional layers. From the GoogLeNet architecture described in the paper, it
 does not appear to use a systematic number of filters for parallel convolutional layers as the
 model is highly optimized. As such, we can parameterize the module definition so that we can
-specify the number of filters to use in each of the 1 × 1, 3 × 3, and 5 × 5 filters.
+specify the number of filters to use in each of the 1 x 1, 3 x 3, and 5 x 5 filters.
 '''
 
 # %%
 '''
 If you intend to use many inception modules in your model, you may require this computational performance-based modification. The function below implements this optimization
 improvement with parameterization so that you can control the amount of reduction in the
-number of filters prior to the 3 × 3 and 5 × 5 convolutional layers and the number of increased
+number of filters prior to the 3 x 3 and 5 x 5 convolutional layers and the number of increased
 filters after max pooling.
 
 
@@ -74,7 +74,7 @@ plot_model(model, show_shapes=True, to_file='/tmp/inception_module.png')
 Running the example creates a linear summary of the layers that does not really help to
 understand what is going on. The output is omitted here for brevity. A plot of the model
 architecture is created that does make the layout of each module clear and how the first model
-feeds the second module. Note that the first 1 × 1 convolution in each inception module is on
+feeds the second module. Note that the first 1 x 1 convolution in each inception module is on
 the far right for space reasons, but besides that, the other layers are organized left to right
 within each module
 '''
