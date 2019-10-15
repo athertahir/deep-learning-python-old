@@ -6,7 +6,11 @@ from keras.models import load_model
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 
-%matplotlib notebook
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+import warnings
+warnings.simplefilter("ignore")
+
 from matplotlib import pyplot
 from matplotlib.patches import Rectangle
 

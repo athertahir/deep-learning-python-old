@@ -5,6 +5,9 @@ from keras.models import load_model
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
 # load and prepare an image
 def load_image_pixels(filename, shape):
     # load the image to get its shape

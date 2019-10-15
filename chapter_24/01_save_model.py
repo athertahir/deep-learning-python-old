@@ -11,6 +11,9 @@ from keras.layers import UpSampling2D
 from keras.layers.merge import add, concatenate
 from keras.models import Model
 
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
 def _conv_block(inp, convs, skip=True):
 	x = inp
 	count = 0
@@ -162,4 +165,4 @@ weight_reader = WeightReader('yolov3.weights')
 # set the model weights into the model
 weight_reader.load_weights(model)
 # save the model to file
-model.save('/tmp/model.h5')
+model.save('model.h5')

@@ -24,7 +24,6 @@ the XML file for a pre-trained model. OpenCV provides a number of pre-trained mo
 part of the installation. These are available on your system and are also available on the
 OpenCV GitHub project. We can load the model as follows:
 
-# load the pre-trained model
 classifier = CascadeClassifier('haarcascade_frontalface_default.xml')
 
 Once loaded, the model can be used to perform face detection on a photograph by calling
