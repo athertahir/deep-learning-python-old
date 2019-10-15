@@ -14,7 +14,7 @@ pip install numpy==1.16.0
 pip install pydot
 pip install graphviz
 
-# pip install git+https://github.com/rcmalli/keras-vggface.git
+pip install git+https://github.com/rcmalli/keras-vggface.git
 
 sudo add-apt-repository ppa:gviz-adm/graphviz-dev
 sudo apt-get update
