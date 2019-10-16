@@ -2,7 +2,8 @@
 from numpy import mean
 from numpy import std
 
-%matplotlib notebook
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from matplotlib import pyplot
 from sklearn.model_selection import KFold
 from keras.datasets import fashion_mnist

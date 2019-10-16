@@ -1,6 +1,7 @@
 # example of loading the fashion mnist dataset
 
-%matplotlib notebook
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from matplotlib import pyplot
 from keras.datasets import fashion_mnist
 # load dataset
